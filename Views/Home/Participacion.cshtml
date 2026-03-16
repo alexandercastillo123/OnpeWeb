@@ -1,0 +1,118 @@
+﻿@model OnpeWeb.Models.ParticipacionTotalViewModel
+@{
+    ViewData["Title"] = "Participación Ciudadana";
+}
+
+<div id="imprimelo3">
+    <div class="container">
+        <img src="~/images/f-participacion.jpg" width="1170" height="248" class="img-responsive mg30top" alt="Banner Participación" />
+
+        <section class="menu navbar-default menu05">
+            <nav class="navbar-collapse bs-navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="bt-azul"><a href="#">PRESIDENCIAL</a></li>
+                    <li class="bt-amarillo"><a href="@Url.Action("ActasUbigeo")">ACTAS</a></li>
+                    <li class="bt-rojo act-rojo"><a href="@Url.Action("Participacion")">PARTICIPACIÓN CIUDADANA</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <br /><br /><br /><br />
+
+        <section class="contenedor">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="menu-interna">
+                        <ul>
+                            <li><a href="@Url.Action("Participacion")" class="act-izq">TOTAL</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-9" id="impreso">
+                    <div class="contenido-interna">
+                        <div class="titulos col-xs-12">
+                            <h3>
+                                <span class="glyphicon glyphicon-circle-arrow-right" style="font-size:19px"></span>
+                                SEGUNDA ELECCIÓN PRESIDENCIAL 2016: PARTICIPACIÓN CIUDADANA
+                            </h3>
+                        </div>
+
+                        <div class="col-lg-7 centered">
+                            <div class="col-xs-12 col-md-12 col-lg-12 cont-curv">
+                                <div class="col-xs-3 col-md-1"><span class="glyphicon glyphicon-ok-circle ico-info"></span></div>
+                                <div class="col-xs-9 col-md-11">
+                                    <ul><li>ACTUALIZADO EL 20/06/2016 A LAS 19:16 h</li></ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mg30top">
+                            <div class="col-xs-12 col-md-6 text-center">
+                                <div id="piechart_3d" style="width: 100%; height: 400px;"></div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6">
+                                <p class="subtitle">ELECTORES HÁBILES @Model.ElectoresHabiles.ToString("N0")</p>
+                                <div id="page-wrap">
+                                    <table class="table09_2" cellspacing="0">
+                                        <thead><tr><th>PARTICIPACIÓN</th><th>AUSENTISMO</th></tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>TOTAL: @Model.TotalAsistentes.ToString("N0")</td>
+                                                <td>TOTAL: @Model.TotalAusentes.ToString("N0")</td>
+                                            </tr>
+                                            <tr>
+                                                <td>% TOTAL: @Model.PorcAsistentes</td>
+                                                <td>% TOTAL: @Model.PorcAusentes</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 pbot30 ptop20">
+                            <div class="col-xs-12 col-md-6 text-center">
+                                <a href="@Url.Action("ParticipacionTotal")"><img src="~/images/icono_nacional.jpg" class="img-responsive" alt="Nacional"></a>
+                            </div>
+                            <div class="col-xs-12 col-md-6 text-center">
+                                <a href="@Url.Action("ParticipacionExtranjero")"><img src="~/images/icono_extranjero.jpg" class="img-responsive" alt="Extranjero"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Tipo', 'Cantidad'],
+        ['Participación', @Model.TotalAsistentes],
+        ['Ausentismo', @Model.TotalAusentes]
+        ]);
+
+        var options = {
+        title: '',
+        is3D: true,
+        pieSliceText: 'percentage',
+        pieSliceTextStyle: { color: 'white', fontSize: 18, bold: true },
+        colors: ['#003087', '#d3d3d3'],
+        legend: { position: 'bottom', textStyle: { fontSize: 14 } },
+        pieStartAngle: 100,
+        slices: { 1: { offset: 0.08 } }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+        }
+    </script>
+}

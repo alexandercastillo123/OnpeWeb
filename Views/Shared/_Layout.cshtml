@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ONPE</title>
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="pull-left logo-onpe">
+                <div class="pull-left">
+                    <a href="@Url.Action("Index", "Home")"><img src="~/images/onpe-trans.png" alt="ONPE"></a>
+                </div>
+                <div class="pull-left">
+                    <h1>PRESENTACIÓN DE RESULTADOS</h1>
+                </div>
+            </div>
+            <div class="pull-right logo">
+                <img src="~/images/eegg2016-trans.png" width="218" height="35" alt="EEGG 2016">
+                </div>
+            </div>
+
+        </header>
+
+        <main role="main">
+            @RenderBody()
+        </main>
+
+        <footer class="footer-inside">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 direc01">
+                        <span>CONTÁCTENOS</span>
+                        <p>Jr. Washington 1894, Cercado de Lima</p>
+                        <p>Correo electrónico: informes@onpe.gob.pe</p>
+                        <p>Central Telefónica: 417 - 0630 / Lunes a Viernes 08:30 - 16:30 hrs</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+</html>

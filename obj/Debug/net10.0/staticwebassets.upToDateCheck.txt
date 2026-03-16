@@ -1,0 +1,162 @@
+wwwroot\css\bootstrap.css
+wwwroot\css\bootstrap.min.css
+wwwroot\css\font-awesome.min.css
+wwwroot\css\fontawesome.min.css
+wwwroot\css\style.css
+wwwroot\favicon.ico
+wwwroot\fonts\glyphicons-halflings-regular.eot
+wwwroot\fonts\glyphicons-halflings-regular.svg
+wwwroot\fonts\glyphicons-halflings-regular.ttf
+wwwroot\fonts\glyphicons-halflings-regular.woff
+wwwroot\fonts\glyphicons-halflings-regular.woff2
+wwwroot\images\actas.jpg
+wwwroot\images\actas_portada.jpg
+wwwroot\images\eegg2016-trans.png
+wwwroot\images\estadistico.png
+wwwroot\images\f-actas.jpg
+wwwroot\images\f-participacion.jpg
+wwwroot\images\f-presidencial.jpg
+wwwroot\images\icono_extranjero.jpg
+wwwroot\images\icono_nacional.jpg
+wwwroot\images\keyko.jpg
+wwwroot\images\mp-sin.jpg
+wwwroot\images\onpe-trans.png
+wwwroot\images\participacion.jpg
+wwwroot\images\participacion_portada.jpg
+wwwroot\images\pkk.jpg
+wwwroot\images\presidenciales.jpg
+wwwroot\images\procesacon.jpg
+wwwroot\images\procesasin.jpg
+wwwroot\images\simbolo_keyko.jpg
+wwwroot\images\simbolo_pkk.jpg
+wwwroot\images\sinprocesa.jpg
+wwwroot\images\votacion.png
+wwwroot\images\votos_validos.png
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\css\bootstrap.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\favicon.ico
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\js\site.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery-validation\LICENSE.md
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\dist\jquery.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\dist\jquery.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\dist\jquery.min.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\lib\jquery\LICENSE.txt
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\css\bootstrap.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\css\font-awesome.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\css\fontawesome.min.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\css\style.css
+D:\tarea onpe y cinestar\OnpeWeb\OnpeWeb\wwwroot\fonts\glyphicons-halflings-regular.svg

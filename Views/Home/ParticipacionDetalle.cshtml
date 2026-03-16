@@ -1,0 +1,204 @@
+﻿@model OnpeWeb.Models.ParticipacionTotalViewModel
+@{
+    ViewData["Title"] = $"Participación - {Model?.Ambito ?? "General"}";
+
+    string nivelActual = !string.IsNullOrEmpty(Model?.DistritoSeleccionado) ? "Distrito" :
+                         !string.IsNullOrEmpty(Model?.ProvinciaSeleccionada) ? "Provincia" :
+                         !string.IsNullOrEmpty(Model?.DepartamentoSeleccionado) ? "Departamento" : "Total";
+
+    string tituloTabla = nivelActual switch
+    {
+        "Distrito" => "DISTRITO",
+        "Provincia" => "DISTRITO",
+        "Departamento" => "PROVINCIA",
+        _ => (Model?.Ambito == "Extranjero" ? "CONTINENTE" : "DEPARTAMENTO")
+    };
+
+    bool esUltimoNivel = nivelActual == "Distrito";
+}
+
+<div id="imprimelo3">
+    <div class="container">
+        <img src="~/images/f-participacion.jpg" style="width: 1170px; height: 248px;" class="img-responsive mg30top" alt="Participación" />
+
+        <section class="menu navbar-default menu05">
+            <nav class="navbar-collapse bs-navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="bt-azul"><a href="#">PRESIDENCIAL</a></li>
+                    <li class="bt-amarillo"><a href="@Url.Action("ActasUbigeo")">ACTAS</a></li>
+                    <li class="bt-rojo act-rojo"><a href="@Url.Action("Participacion")">PARTICIPACIÓN CIUDADANA</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="contenedor">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="menu-interna">
+                        <ul><li><a href="@Url.Action("Participacion")">TOTAL</a></li></ul>
+                    </div>
+                </div>
+
+                <div class="mg20top">
+                    <a href="@Url.Action("Participacion")" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-chevron-left"></span> REGRESAR
+                    </a>
+                    <a href="#" class="btn btn-primary" style="margin-left: 485px;">
+                        <i></i> REPORTE DETALLADO EN EXCEL
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-md-9" id="impreso">
+                    <div class="contenido-interna">
+                        <div class="titulos col-xs-12">
+                            <h3>
+                                <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                SEGUNDA ELECCIÓN PRESIDENCIAL 2016: PARTICIPACIÓN CIUDADANA
+                            </h3>
+                        </div>
+
+                        <div class="row mg30top">
+                            <div class="col-xs-12 col-md-6 text-center">
+                                <div id="piechart_3d" style="width: 100%; height: 400px;"></div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-6" style="padding: 15px;">
+                                <p style="color: #000; line-height: 1.8; margin: 0 0 20px 0; font-weight: normal;">
+                                    <span style="font-weight: bold;">Ámbito:</span> @(Model?.Ambito ?? "N/A")<br />
+                                    @if (!string.IsNullOrEmpty(Model?.DepartamentoSeleccionado))
+                                    {
+                                        <span style="font-weight: bold;">Departamento:</span> 
+                                        @Model.DepartamentoSeleccionado
+                                        
+                                        <br />
+                                    }
+                                    @if (!string.IsNullOrEmpty(Model?.ProvinciaSeleccionada))
+                                    {
+                                        <span style="font-weight: bold;">Provincia:</span> 
+                                        @Model.ProvinciaSeleccionada
+                                        
+                                        <br />
+                                    }
+                                    @if (!string.IsNullOrEmpty(Model?.DistritoSeleccionado))
+                                    {
+                                        <span style="font-weight: bold;">Distrito:</span> 
+                                        @Model.DistritoSeleccionado
+                                    }
+                                </p>
+
+                                <p style="color: #000; font-weight: bold; margin: 15px 0;">
+                                    ELECTORES HÁBILES @(Model?.ElectoresHabiles.ToString("N0") ?? "0")
+                                </p>
+
+                                <div id="page-wrap">
+                                    <table class="table09_2" style="width: 100%;" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>PARTICIPACIÓN</th>
+                                                <th>AUSENTISMO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>TOTAL: @(Model?.TotalAsistentes.ToString("N0") ?? "0")</td>
+                                                <td>TOTAL: @(Model?.TotalAusentes.ToString("N0") ?? "0")</td>
+                                            </tr>
+                                            <tr>
+                                                <td>% TOTAL: @(Model?.PorcAsistentes ?? "0.000 %")</td>
+                                                <td>% TOTAL: @(Model?.PorcAusentes ?? "0.000 %")</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        @if (Model?.ListaDepartamentos?.Any() == true)
+                        {
+                            <div class="col-xs-12 mg30top">
+                                <p class="subtitle">CONSULTA DE PARTICIPACIÓN DETALLADO</p>
+                                <div id="page-wrap">
+                                    <table class="table21" style="width: 100%;">
+                                        <thead>
+                                            <tr class="titulo_tabla">
+                                                <th>@tituloTabla</th>
+                                                <th>TOTAL ASISTENTES</th>
+                                                <th>% ASISTENTES</th>
+                                                <th>TOTAL AUSENTES</th>
+                                                <th>% AUSENTES</th>
+                                                <th>ELECTORES HÁBILES</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model.ListaDepartamentos)
+                                            {
+                                                if (esUltimoNivel)
+                                                {
+                                                    <tr>
+                                                        <td>@(item.Columna1 ?? "")</td>
+                                                        <td>@(item.Columna2 ?? "0")</td>
+                                                        <td>@(item.Columna3 ?? "0.000 %")</td>
+                                                        <td>@(item.Columna4 ?? "0")</td>
+                                                        <td>@(item.Columna5 ?? "0.000 %")</td>
+                                                        <td>@(item.Columna6 ?? "0")</td>
+                                                    </tr>
+                                                }
+                                                else
+                                                {
+                                                    <tr onclick="location.href='@Url.Action("ParticipacionDetalle", new { ambito = Model.Ambito, depa = Model.DepartamentoSeleccionado, prov = Model.ProvinciaSeleccionada, dist = Model.DistritoSeleccionado, siguiente = item.Columna1 })'"
+                                                        style="cursor: pointer;"
+                                                        onmouseover="this.style.backgroundColor='#f8f9fa';"
+                                                        onmouseout="this.style.backgroundColor='';">
+                                                        <td>@(item.Columna1 ?? "")</td>
+                                                        <td>@(item.Columna2 ?? "0")</td>
+                                                        <td>@(item.Columna3 ?? "0.000 %")</td>
+                                                        <td>@(item.Columna4 ?? "0")</td>
+                                                        <td>@(item.Columna5 ?? "0.000 %")</td>
+                                                        <td>@(item.Columna6 ?? "0")</td>
+                                                    </tr>
+                                                }
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        }
+                        else if (!string.IsNullOrEmpty(Model?.DistritoSeleccionado))
+                        {
+                            <div class="alert alert-info mt-4">
+                                No se encontraron datos detallados para este distrito.
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Tipo', 'Cantidad'],
+        ['Participación', @(Model?.TotalAsistentes ?? 0)],
+        ['Ausentismo', @(Model?.TotalAusentes ?? 0)]
+        ]);
+
+        var options = {
+        is3D: true,
+        pieSliceText: 'percentage',
+        colors: ['#003087', '#d3d3d3'],
+        legend: { position: 'bottom' },
+        slices: { 1: { offset: 0.05 } }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+        }
+    </script>
+}

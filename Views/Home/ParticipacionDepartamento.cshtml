@@ -1,0 +1,69 @@
+﻿@model OnpeWeb.Models.ParticipacionTotalViewModel
+@using Microsoft.AspNetCore.Mvc.Rendering
+
+@{
+    ViewData["Title"] = $"Participación - {Model.Ambito}";
+}
+
+<div id="imprimelo3">
+    <div class="container">
+        <img src="~/images/f-participacion.jpg" width="1170" height="248" class="img-responsive mg30top" />
+
+        <section class="menu navbar-default menu05">
+            <nav class="navbar-collapse bs-navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="bt-azul"><a href="#">PRESIDENCIAL</a></li>
+                    <li class="bt-amarillo"><a href="@Url.Action("ActasUbigeo")">ACTAS</a></li>
+                    <li class="bt-rojo act-rojo"><a href="@Url.Action("Participacion")">PARTICIPACIÓN CIUDADANA</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="contenedor">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="menu-interna">
+                        <ul>
+                            <li><a href="@Url.Action("Participacion")">TOTAL</a></li>
+                            <li><a href="@Url.Action("ParticipacionTotal")">Por Departamento</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-9">
+                    <div class="contenido-interna">
+                        <h3>Participación en @Model.Ambito</h3>
+
+                        <div id="chart" style="width:100%; height:400px;"></div>
+
+                        <table class="table21">
+                            <thead>
+                                <tr class="titulo_tabla">
+                                    <th>PROVINCIA</th>
+                                    <th>TOTAL ASISTENTES</th>
+                                    <th>% ASISTENTES</th>
+                                    <th>TOTAL AUSENTES</th>
+                                    <th>% AUSENTES</th>
+                                    <th>ELECTORES HÁBILES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.ListaDepartamentos)
+                                {
+                                    <tr>
+                                        <td>@item.Columna1</td>
+                                        <td>@item.Columna2</td>
+                                        <td>@item.Columna3</td>
+                                        <td>@item.Columna4</td>
+                                        <td>@item.Columna5</td>
+                                        <td>@item.Columna6</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

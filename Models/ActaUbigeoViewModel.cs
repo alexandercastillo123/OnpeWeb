@@ -1,0 +1,20 @@
+﻿using System.Collections.Generic;
+
+namespace OnpeWeb.Models
+{
+    public class ActaUbigeoViewModel
+    {
+        public string AmbitoSeleccionado { get; set; } = "P";
+        public string DepartamentoSeleccionado { get; set; } = "";
+        public string ProvinciaSeleccionado { get; set; } = "";
+        public string DistritoSeleccionado { get; set; } = "";
+        public string LocalSeleccionado { get; set; } = "";
+        public string MesaSeleccionada { get; set; } = "";
+        public List<UbigeoSelectListItem> Departamentos { get; set; } = new();
+        public List<UbigeoSelectListItem> Provincias { get; set; } = new();
+        public List<UbigeoSelectListItem> Distritos { get; set; } = new();
+        public List<UbigeoSelectListItem> Locales { get; set; } = new();
+        public List<UbigeoSelectListItem> Mesas { get; set; } = new();
+        public ActaDetalle? ActaDetalle { get; set; }
+    }
+}

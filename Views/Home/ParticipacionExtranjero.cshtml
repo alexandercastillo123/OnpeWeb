@@ -1,0 +1,121 @@
+﻿@model OnpeWeb.Models.ParticipacionTotalViewModel
+@{
+    ViewData["Title"] = $"Participación - {Model.Ambito}";
+}
+<div id="imprimelo3">
+    <div class="container">
+        <img src="~/images/f-participacion.jpg" width="1170" height="248" class="img-responsive mg30top" />
+
+        <section class="menu navbar-default menu05">
+            <nav class="navbar-collapse bs-navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="bt-azul"><a href="#">PRESIDENCIAL</a></li>
+                    <li class="bt-amarillo"><a href="@Url.Action("ActasUbigeo")">ACTAS</a></li>
+                    <li class="bt-rojo act-rojo"><a href="@Url.Action("Participacion")">PARTICIPACIÓN CIUDADANA</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="contenedor">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div class="menu-interna">
+                        <ul>
+                            <li><a href="@Url.Action("Participacion")">TOTAL</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-9" id="impreso">
+                    <div class="contenido-interna">
+                        <div class="titulos col-xs-12">
+                            <h3>SEGUNDA ELECCIÓN PRESIDENCIAL 2016: PARTICIPACIÓN CIUDADANA - @Model.Ambito.ToUpper()</h3>
+                        </div>
+
+                        <div class="row mg30top">
+                            <div class="col-xs-12 col-md-6 text-center">
+                                <div id="piechart_3d" style="width:100%; height:400px;"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p class="subtitle">ELECTORES HÁBILES @Model.ElectoresHabiles.ToString("N0")</p>
+                                <div id="page-wrap">
+                                    <table class="table09_2" cellspacing="0">
+                                        <thead><tr><th>PARTICIPACIÓN</th><th>AUSENTISMO</th></tr></thead>
+                                        <tbody>
+                                            <tr><td>TOTAL: @Model.TotalAsistentes.ToString("N0")</td><td>TOTAL: @Model.TotalAusentes.ToString("N0")</td></tr>
+                                            <tr><td>% TOTAL: @Model.PorcAsistentes</td><td>% TOTAL: @Model.PorcAusentes</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <p class="subtitle">Consulta de participación DETALLADO</p>
+                            <div id="page-wrap">
+                                <table class="table21">
+                                    <thead>
+                                        <tr class="titulo_tabla">
+                                            <th>DEPARTAMENTO</th>
+                                            <th>TOTAL ASISTENTES</th>
+                                            <th>% ASISTENTES</th>
+                                            <th>TOTAL AUSENTES</th>
+                                            <th>% AUSENTES</th>
+                                            <th>ELECTORES HÁBILES</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.ListaDepartamentos)
+                                        {
+                                            <tr onclick="location.href='@Url.Action("ParticipacionTotal", new { ambito = Model.Ambito, depa = item.Columna1 })'"
+                                                style="cursor:pointer;" onmouseover="this.style.backgroundColor='#f0f0f0'">
+                                                <td>@item.Columna1</td>
+                                                <td>@item.Columna2</td>
+                                                <td>@item.Columna3</td>
+                                                <td>@item.Columna4</td>
+                                                <td>@item.Columna5</td>
+                                                <td>@item.Columna6</td>
+                                            </tr>
+                                        }
+                                        <tr>
+                                            <td><strong>TOTALES</strong></td>
+                                            <td>@Model.TotalAsistentes.ToString("N0")</td>
+                                            <td>@Model.PorcAsistentes</td>
+                                            <td>@Model.TotalAusentes.ToString("N0")</td>
+                                            <td>@Model.PorcAusentes</td>
+                                            <td>@Model.ElectoresHabiles.ToString("N0")</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Tipo', 'Cantidad'],
+        ['Participación', @Model.TotalAsistentes],
+        ['Ausentismo', @Model.TotalAusentes]
+        ]);
+        var options = {
+        is3D: true,
+        pieSliceText: 'percentage',
+        colors: ['#003087', '#d3d3d3'],
+        legend: { position: 'bottom' },
+        slices: { 1: { offset: 0.08 } }
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+        }
+    </script>
+}
