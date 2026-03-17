@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|c:\\users\\alumno\\source\\repos\\onpeweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|c:\\users\\alumno\\source\\repos\\onpeweb\\views\\home\\actasubigeo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|solutionrelative:views\\home\\actasubigeo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|c:\\users\\alumno\\source\\repos\\onpeweb\\views\\home\\participaciontotal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|solutionrelative:views\\home\\participaciontotal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|c:\\users\\alumno\\source\\repos\\onpeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|c:\\users\\alumno\\source\\repos\\onpeweb\\views\\home\\actasubigeo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|solutionrelative:views\\home\\actasubigeo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A028222-09DA-E460-2414-4EBABEB0B9BA}|OnpeWeb.csproj|c:\\users\\alumno\\source\\repos\\onpeweb\\views\\home\\participaciondetalle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,6 +51,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-17T16:03:53.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ParticipacionTotal.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\ParticipacionTotal.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ParticipacionTotal.cshtml",
@@ -59,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ParticipacionExtranjero.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\ParticipacionExtranjero.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ParticipacionExtranjero.cshtml",
@@ -72,24 +93,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ActasUbigeo.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\ActasUbigeo.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ActasUbigeo.cshtml",
               "ToolTip": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\ActasUbigeo.cshtml",
               "RelativeToolTip": "Views\\Home\\ActasUbigeo.cshtml",
-              "ViewState": "AgIAAGUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-17T15:52:08.084Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ParticipacionDetalle.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\ParticipacionDetalle.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ParticipacionDetalle.cshtml",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ParticipacionDepartamento.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\ParticipacionDepartamento.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ParticipacionDepartamento.cshtml",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -128,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
