@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnpeWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c0401d8003d815064ae955b9bb1d91f6de29803")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnpeWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnpeWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

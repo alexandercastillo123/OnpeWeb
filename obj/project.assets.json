@@ -966,23 +966,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ALEXANDER\\.nuget\\packages\\": {},
+    "C:\\Users\\Alumno\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\tarea onpe y cinestar\\OnpeWeb\\OnpeWeb\\OnpeWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\OnpeWeb.csproj",
       "projectName": "OnpeWeb",
-      "projectPath": "D:\\tarea onpe y cinestar\\OnpeWeb\\OnpeWeb\\OnpeWeb.csproj",
-      "packagesPath": "C:\\Users\\ALEXANDER\\.nuget\\packages\\",
-      "outputPath": "D:\\tarea onpe y cinestar\\OnpeWeb\\OnpeWeb\\obj\\",
+      "projectPath": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\OnpeWeb.csproj",
+      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alumno\\source\\repos\\OnpeWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ALEXANDER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -991,6 +991,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
